@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHEcosystem</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+         .header-section {
+            background-color: #c2185b; /* Dark rose color */
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Ensures header stays above other elements */
+        }
+        .site-title {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-size: 18px;
+            margin-right: 15px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color:black; /* Lighter color on hover */
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28155, 155, 155, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+    body {
+    background-color: #fbd0e3; /* Baby pink background */
+    font-family: Arial, sans-serif;
+}
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f8e6f5, #e5ccf1);
+            overflow: hidden;
+        }
+
+        .logo-container {
+            text-align: center;
+            margin-top: 80px; /* Adjust for fixed navbar */
+        }
+
+        .logo-container img {
+            width: 400px;
+            height: 400px;
+            object-fit: contain;
+        }
+
+        .title {
+            margin: 20px 0;
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ae6ba0;
+            text-transform: uppercase;
+        }
+
+        .title span.she {
+            color: red; /* Color for SHE */
+        }
+
+        .title span.ecosystem {
+            color: black; /* Color for ecosystem */
+            text-transform: lowercase; /* Ensures ecosystem is in lowercase */
+        }
+
+        .tabs {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .tab {
+            background-color: #ae6ba0;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .tab:hover {
+            background-color: #6a3f6a;
+        }
+
+        .tab:active {
+            background-color: #8b4f85;
+        }
+
+        .header-section {
+            background-color: #c2185b; /* Dark rose color */
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg header-section">
+        <div class="container-fluid">
+            <!-- Left: Logo Image and Title -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/SHEcosystem.jpg" alt="Logo" width="50" height="50" class="me-2"> <!-- Replace with your image URL -->
+                <span class="site-title">SHEcosystem</span>
+            </a>
+            
+            <!-- Right: Navbar -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="https://static.vecteezy.com/system/resources/previews/012/598/212/original/currency-coin-cartoon-png.png" alt="Coin" width="30" height="30"> <!-- Coin image -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container text-center">
+    <div class="logo-container mt-5">
+        <img src="images/SHEcosystem.jpg" alt="SHEecosystem Logo">
+        <div class="title">
+            <span class="she">SHE</span><span class="ecosystem">cosystem</span>
+        </div>
+    </div>
+
+    <div class="tabs mt-4">
+        <a href="home.html" class="tab">English</a>
+        <a href="homet.html" class="tab">Tamil</a>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

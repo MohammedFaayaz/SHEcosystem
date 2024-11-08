@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Dashboard - SHEcosystem</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #fbd0e3; /* Baby pink background */
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Header Section */
+        .header-section {
+            background-color: #c2185b; /* Dark rose color */
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Ensures header stays above other elements */
+        }
+        .site-title {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-size: 18px;
+            margin-right: 15px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color:black; /* Lighter color on hover */
+        }
+      
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28155, 155, 155, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        .dashboard-container {
+            margin-top: 50px;
+        }
+
+        .progress-chart {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .quote-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .quote {
+            font-size: 20px;
+            font-style: italic;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="navbar navbar-expand-lg header-section">
+        <div class="container-fluid">
+            <!-- Left: Logo Image and Title -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/SHEcosystem.jpg" alt="Logo" width="50" height="50" class="me-2"> <!-- Replace with your image URL -->
+                <span class="site-title">SHEcosystem</span>
+            </a>
+            
+            <!-- Right: Navbar -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="mentor.html">Mentorships</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="fundrequest.html" >Funds</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="scheme.html">Schemes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="https://static.vecteezy.com/system/resources/previews/012/598/212/original/currency-coin-cartoon-png.png" alt="Coin" width="30" height="30"> <!-- Coin image -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+<br><br><br><br>
+    <!-- Dashboard Section -->
+    <div class="container dashboard-container">
+        <div class="row">
+            <!-- Progress Chart -->
+            <div class="col-md-8 offset-md-2">
+                <div class="progress-chart">
+                    <h2 class="text-center mb-4">Progress Towards Your Goals</h2>
+                    <canvas id="progressChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quote Section -->
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <div class="quote-container">
+                    <p class="quote">"Congratulations on achieving your highest goal of viewing of investors!"</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Chart.js Code for Progress Graph -->
+    <script>
+        const ctx = document.getElementById('progressChart').getContext('2d');
+        const progressChart = new Chart(ctx, {
+            type: 'line', // Line chart to show progress
+            data: {
+                labels: ['Week 1', 'Week 2', 'Week 3', 'Week 4', 'Week 5', 'Week 6'], // Timeframe
+                datasets: [{
+                    label: 'Mentees Reached',
+                    data: [10, 30, 50, 70, 90, 120], // Progress on mentees
+                    borderColor: '#ff6384', // Pink line for mentees
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderWidth: 2
+                },
+                {
+                    label: 'NGOs Engaged',
+                    data: [5, 20, 40, 60, 80, 100], // Progress on NGOs
+                    borderColor: '#36a2eb', // Blue line for NGOs
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderWidth: 2
+                },
+                {
+                    label: 'Investors Interested',
+                    data: [1, 5, 10, 20, 40, 60], // Progress on investors
+                    borderColor: '#4bc0c0', // Green line for investors
+                    backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Weeks'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Number Reached'
+                        },
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+
+</body>
+</html>

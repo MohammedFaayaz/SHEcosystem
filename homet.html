@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women Empowerment Platform</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+     .header-section {
+            background-color: #c2185b; /* Dark rose color */
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Ensures header stays above other elements */
+        }
+        .site-title {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-size: 18px;
+            margin-right: 15px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f8f9fa; /* Lighter color on hover */
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28155, 155, 155, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+    body {
+    background-color: #fbd0e3; /* Baby pink background */
+    font-family: Arial, sans-serif;
+}
+               
+        .dashboard-container {
+            margin-top: 50px;
+        }
+
+    
+    .hero {
+      background: url('https://images.unsplash.com/photo-1543986911-48a6bace9a77') no-repeat center center/cover;
+      height: 60vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      opacity: 0.9; /* Slightly transparent for better text visibility */
+    }
+    .hero .hero-content {
+      max-width: 600px; /* Limiting width of the content */
+      margin: 0 auto; /* Centering the content */
+    }
+    .hero h1 {
+      font-size: 3rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+      margin: 0; /* Remove margin */
+    }
+    .hero p {
+      font-size: 1.5rem; /* Slightly larger font for visibility */
+      margin: 5px 0; /* Small margin for spacing */
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Text shadow for better readability */
+    }
+    .main-content {
+      margin-top: -10px; /* Reduced gap between hero and content */
+    }
+    .feature-card {
+      background-color: #dbb2e0; /* Mild green color */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+      transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+      margin: 10px; /* Spacing between cards */
+      position: relative; /* Position for the glowing effect */
+    }
+    .feature-card:hover {
+      transform: translateY(-5px); /* Lift effect on hover */
+      box-shadow: 0 0 20px rgba(255, 255, 0, 0.8), 0 0 30px rgba(255, 255, 0, 0.6); /* Yellow glow on hover */
+    }
+
+    .navbar-nav .nav-link {
+            color: white;
+            font-size: 18px;
+            margin-right: 15px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color:black; /* Lighter color on hover */
+        }
+  </style>
+</head>
+<body>
+    <header class="navbar navbar-expand-lg header-section">
+        <div class="container-fluid">
+            <!-- Left: Logo Image and Title -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/SHEcosystem.jpg" alt="Logo" width="50" height="50" class="me-2"> <!-- Replace with your image URL -->
+                <span class="site-title">SHEcosystem</span>
+            </a>
+            
+            <!-- Right: Navbar -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="home.html">தொடக்கப் பக்கம்</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutt.html">எங்களைப் பற்றி</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="https://static.vecteezy.com/system/resources/previews/012/598/212/original/currency-coin-cartoon-png.png" alt="Coin" width="30" height="30"> <!-- Coin image -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+  <div class="hero">
+    <div class="hero-content">
+      <h1>எங்கள் தளத்திற்கு வரவேற்கிறோம்</h1>
+      <p>உங்கள் தொழில் முனைவோர் பயணத்தை ஆதரிக்கும் ஆதாரங்களை ஆராயுங்கள்.</p>
+    </div>
+  </div>
+
+  <div class="container text-center main-content mt-1"> <!-- Reduced margin-top to 1 -->
+    <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://sheatwork.com/wp-content/uploads/2018/05/schemes.jpg" class="d-block w-100 rounded" alt="Empowerment">
+        </div>
+        <div class="carousel-item">
+          <img src="https://media.licdn.com/dms/image/v2/C4E12AQF8pnW9Pl5hJQ/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1615892253719?e=2147483647&v=beta&t=9MQaKOdkXr6xY4Z5udr3T9Vq4WH7MmAqcVAibIwo1XE" class="d-block w-100 rounded" alt="Support">
+        </div>
+        <div class="carousel-item">
+          <img src="https://thumbs.dreamstime.com/b/empowered-women-friends-group-hug-celebration-international-women-s-day-empowered-women-come-together-group-hug-to-267962291.jpg" class="d-block w-100 rounded" alt="Community">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">
+          முந்தைய</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">
+          அடுத்து</span>
+      </button>
+    </div>
+
+    <div class="row justify-content-center mt-3">
+      <div class="col-md-3">
+        <div class="card feature-card p-3">
+          <h5 class="card-title">வழிகாட்டுதல்கள்</h5>
+          <p class="card-text">உங்களுக்கு வழிகாட்டக்கூடிய அனுபவமிக்க வழிகாட்டிகளுடன் இணையுங்கள்.</p>
+          <a href="login.html" class="btn btn-dark">மேலும் அறிக</a>
+        </div>
+      </div>
+     
+      <div class="col-md-3">
+        <div class="card feature-card p-3">
+          <h5 class="card-title">நிதியுதவி </h5>
+          <p class="card-text">பெண்களுக்கு கிடைக்கக்கூடிய பல்வேறு நிதி விருப்பங்களைக் கண்டறியவும்.</p>
+          <a href="fund.html" class="btn btn-dark">மேலும் அறிக</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card feature-card p-3">
+          <h5 class="card-title">நிதி கோரிக்கை</h5>
+          <p class="card-text">உங்கள் கண்டுபிடிப்புகளைக் கொடுத்து நிதியுதவியைப் பெறுங்கள்.</p>
+          <a href="fundrequest.html" class="btn btn-dark">மேலும் அறிக</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card feature-card p-3">
+          <h5 class="card-title">டாஷ்போர்டு</h5>
+          <p class="card-text">உங்கள் சுயவிவரத்தை நிர்வகிக்கவும் மற்றும் உங்கள் முன்னேற்றத்தைக் கண்காணிக்கவும்.</p>
+          <a href="dash.html" class="btn btn-dark">
+            டாஷ்போர்டை அணுகவும்</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card feature-card p-3">
+          <h5 class="card-title">
+            திட்டங்கள்</h5>
+          <p class="card-text">பெண்களுக்கான பல்வேறு திட்டங்களைப் பற்றி அறிந்து கொள்ளுங்கள்.</p>
+          <a href="scheme.html" class="btn btn-dark">திட்டங்களை ஆராயுங்கள்</a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card feature-card p-3">
+          <h5 class="card-title">உள்நுழைக</h5>
+          <p class="card-text">உங்கள் சுயவிவரத்தை அணுகி உங்கள் தகவலை நிர்வகிக்கவும்.</p>
+          <a href="login.html" class="btn btn-dark">
+            உள்நுழைக</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center mt-5">
+    <p>&copy; 2024 பெண்கள் அதிகாரமளிக்கும் தளம். அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - SHEcosystem</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+            
+
+        /* Header Section */
+        .header-section {
+            background-color: #c2185b; /* Dark rose color */
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000; /* Ensures header stays above other elements */
+        }
+        .site-title {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-size: 18px;
+            margin-right: 15px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #f8f9fa; /* Lighter color on hover */
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28155, 155, 155, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        .carousel-item img {
+            width: 100%; /* Ensure images fill the carousel width */
+            height: auto; /* Maintain aspect ratio */
+        }
+        /* Ensure the body starts below the fixed header */
+        body {
+            background-color: #fbd0e3; /* Baby pink background */
+            font-family: 'Arial', sans-serif;
+            padding-top: 80px; /* Space for the fixed header */
+        }
+
+        /* Image styling */
+        .navbar-brand img {
+            width: 50px; /* Logo image size */
+            height: 50px;
+            margin-right: 10px;
+        }
+
+        .nav-link img {
+            width: 30px; /* Coin image size */
+            height: 30px;
+        }
+        /* About Us Section */
+        .about-section {
+            margin-top: 50px;
+        }
+
+        .section-title {
+            font-size: 32px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .explanation-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        .explanation-title {
+            font-size: 24px;
+            color: #c2185b;
+            font-weight: bold;
+        }
+
+        .contact-container {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact-icons a {
+            margin: 0 15px;
+            font-size: 24px;
+            color: #c2185b;
+        }
+
+        .contact-icons a:hover {
+            color: #ff4081;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+            font-size: 18px;
+            margin-right: 15px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color:black; /* Lighter color on hover */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="navbar navbar-expand-lg header-section">
+        <div class="container-fluid">
+            <!-- Left: Logo Image and Title -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/SHEcosystem.jpg" alt="Logo" width="50" height="50" class="me-2"> <!-- Replace with your image URL -->
+                <span class="site-title">SHEcosystem</span>
+            </a>
+            
+            <!-- Right: Navbar -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="https://static.vecteezy.com/system/resources/previews/012/598/212/original/currency-coin-cartoon-png.png" alt="Coin" width="30" height="30"> <!-- Coin image -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+
+    <!-- About Us Section -->
+    <div class="container about-section">
+        <!-- Section Title -->
+        <h2 class="section-title">About Us</h2>
+
+        <div id="imageCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="https://wpassets.adda247.com/wp-content/uploads/multisite/sites/5/2022/09/08081340/MK-STALIN-DMK-ARVIND-KEJRIWAL-AAM-AADMI-PARTY-MODEL-SCHOOL-RS1000-SCHEME-_08.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://images.tv9hindi.com/wp-content/uploads/2022/10/UGC-Guidelines-for-Women-.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img src="https://static.india.com/wp-content/uploads/2021/01/pink-bus.jpg" alt="Third slide">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#imageCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#imageCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <br>
+        <br>
+        <!-- Explanation for Mentees -->
+        <div class="row">
+            <div class="col-md-8 offset-md-2 explanation-box">
+                <h3 class="explanation-title">Mentees</h3>
+                <p>
+                    At SHEcosystem, we empower women who aspire to be entrepreneurs or improve their skill sets. 
+                    Our mentees receive personalized mentorship, access to resources, and training in business management, finance, and networking. 
+                    Through our platform, women who lack funding and support can find the guidance they need to start and grow their businesses.
+                </p>
+            </div>
+        </div>
+
+        <!-- Explanation for Mentors -->
+        <div class="row">
+            <div class="col-md-8 offset-md-2 explanation-box">
+                <h3 class="explanation-title">Mentors</h3>
+                <p>
+                    Our mentors are industry leaders, successful entrepreneurs, and professionals dedicated to supporting women-led initiatives. 
+                    They provide expertise, mentorship, and networking opportunities to help mentees overcome challenges and accelerate their growth. 
+                    Whether it's strategic advice, technical skills, or financial planning, our mentors guide women towards sustainable success.
+                </p>
+            </div>
+        </div>
+
+        <!-- NGOs Section -->
+        <div class="row">
+            <div class="col-md-8 offset-md-2 explanation-box">
+                <h3 class="explanation-title">NGO Partnerships</h3>
+                <p>
+                    SHEcosystem collaborates with a range of non-governmental organizations that are focused on women’s empowerment, education, and financial inclusion. 
+                    Here are some of our partner NGOs:
+                </p>
+                <ul>
+                    <li><strong>WomenRise Foundation</strong> - Provides microloans and skill development to rural women entrepreneurs.</li>
+                    <li><strong>EmpowerHer Trust</strong> - Focuses on education, health, and economic independence for underprivileged women.</li>
+                    <li><strong>Shakti Initiative</strong> - A platform promoting leadership and entrepreneurial training for young women.</li>
+                    <li><strong>Grameen Mahila Network</strong> - Works to uplift rural women through self-help groups and vocational training programs.</li>
+                    <li><strong>WomenAid India</strong> - Aids women from low-income backgrounds in starting small-scale businesses and crafts cooperatives.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="row">
+            <div class="col-md-8 offset-md-2 contact-container">
+                <h3 class="contact-title">Contact Us</h3>
+                <div class="contact-icons text-center">
+                    <a href="https://instagram.com" target="_blank" class="me-3"><i class="bi bi-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank" class="me-3"><i class="bi bi-facebook"></i></a>
+                    <a href="https://wa.me/your-number" target="_blank" class="me-3"><i class="bi bi-whatsapp"></i></a>
+                    <a href="mailto:support@shecosystem.com" class="me-3"><i class="bi bi-envelope"></i></a>
+                    <a href="https://twitter.com" target="_blank" class="me-3"><i class="bi bi-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funding Request</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fbd0e3; /* Baby pink background */
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: rgb(246, 163, 177);
+            color: white;
+            text-align: center;
+            padding: 80px 0;
+        }
+
+        /* Section Title */
+        .section-title {
+            text-align: center;
+            margin: 50px 0;
+            font-weight: bold;
+            font-size: 2.5rem;
+            color: black;
+        }
+
+        /* Card Hover Effects */
+        .card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 15px;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Submit Button */
+        .btn-submit {
+            background-color: pink;
+            color: white;
+            border-radius: 25px;
+            padding: 10px 20px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .btn-submit:hover {
+            background-color: rgb(255, 151, 168);
+            transform: translateY(-2px);
+        }
+
+        /* Animation for Input Fields */
+        .input-animation {
+            transition: border 0.3s, box-shadow 0.3s;
+        }
+
+        .input-animation:focus {
+            border-color: pink;
+            box-shadow: 0 0 5px rgb(246, 163, 177);
+        }
+
+        /* Fixed Header */
+        .header-section {
+            background-color: #c2185b; /* Dark rose color */
+            padding: 15px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+        .site-title {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar-nav .nav-link {
+            color: white;
+            font-size: 18px;
+            margin-right: 15px;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color:black; /* Lighter color on hover */
+        }
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28155, 155, 155, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+
+        /* Padding to avoid content hiding behind the fixed header */
+        body {
+            padding-top: 80px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="navbar navbar-expand-lg header-section">
+        <div class="container-fluid">
+            <!-- Left: Logo Image and Title -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/SHEcosystem.jpg" alt="Logo" width="50" height="50" class="me-2"> <!-- Replace with your image URL -->
+                <span class="site-title">SHEcosystem</span>
+            </a>
+            
+            <!-- Right: Navbar -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="home.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="dash.html">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <img src="https://static.vecteezy.com/system/resources/previews/012/598/212/original/currency-coin-cartoon-png.png" alt="Coin" width="30" height="30"> <!-- Coin image -->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <h1>Funding Request Form</h1>
+        <p>Help us bring our vision to life! Fill out the form below to request funding.</p>
+    </section>
+
+    <!-- Project Overview Section -->
+    <section class="container my-5">
+        <h2 class="section-title">Project Overview</h2>
+        <div class="card p-4 mb-4">
+            <form>
+                <div class="form-group">
+                    <label for="projectName">Project Name</label>
+                    <input type="text" class="form-control input-animation" id="projectName" placeholder="Enter your project name" required>
+                </div>
+                <div class="form-group">
+                    <label for="projectGoals">Project Goals</label>
+                    <textarea class="form-control input-animation" id="projectGoals" rows="3" placeholder="Summarize your project goals" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="fundingNeed">Why You Need Funding</label>
+                    <textarea class="form-control input-animation" id="fundingNeed" rows="3" placeholder="Explain why you need funding" required></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Milestone Breakdown Section -->
+    <section class="container my-5">
+        <h2 class="section-title">Milestone Breakdown</h2>
+        <div class="card p-4 mb-4">
+            <form>
+                <div class="form-group">
+                    <label for="milestone">Milestone Description</label>
+                    <input type="text" class="form-control input-animation" id="milestone" placeholder="Describe your milestone" required>
+                </div>
+                <div class="form-group">
+                    <label for="milestoneTimeline">Timeline</label>
+                    <input type="date" class="form-control input-animation" id="milestoneTimeline" required>
+                </div>
+                <div class="form-group">
+                    <label for="fundingAmount">Funding Required</label>
+                    <input type="number" class="form-control input-animation" id="fundingAmount" placeholder="Amount required" required>
+                </div>
+                <button type="button" class="btn btn-submit">Add Milestone</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Budget Breakdown Section -->
+    <section class="container my-5">
+        <h2 class="section-title">Budget Breakdown</h2>
+        <div class="card p-4 mb-4">
+            <form>
+                <div class="form-group">
+                    <label for="itemDescription">Item Description</label>
+                    <input type="text" class="form-control input-animation" id="itemDescription" placeholder="Describe the item" required>
+                </div>
+                <div class="form-group">
+                    <label for="itemCost">Item Cost</label>
+                    <input type="number" class="form-control input-animation" id="itemCost" placeholder="Cost of the item" required>
+                </div>
+                <button type="button" class="btn btn-submit">Add Item</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Submit Section -->
+    <section class="container my-5 text-center">
+        <h2 class="section-title">Submit Your Request</h2>
+        <button class="btn btn-submit btn-lg">Submit Funding Request</button>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+        <p>Thank you for your support! | © 2024 Women Empowerment Initiative</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
+
+
+fund
